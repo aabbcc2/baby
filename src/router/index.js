@@ -53,6 +53,29 @@ export default new Router({
             title: '我的还款'
           }
         },
+        {
+          path: 'accountFlow',
+          component: () => import('../views/user/accountFlow'),
+          name: 'accountFlow',
+          meta: {
+            title: '账户流水'
+          }
+        },
+      ]
+    },
+    {
+      path: '/user',
+      name: 'user',
+      component: personal,
+      children: [
+        {
+          path: 'certification',
+          component: () => import('../views/user/certification'),
+          name: 'certification',
+          meta: {
+            title: '用户认证'
+          }
+        },
       ]
     },
     //查看投标详情路由，可查看借款人信息，还款记录，投标记录

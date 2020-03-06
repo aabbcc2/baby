@@ -40,6 +40,11 @@
             </router-link>
           </li>
           <li>
+            <router-link to="/user/certification">
+              <el-button size="small" type="text">实名认证</el-button>
+            </router-link>
+          </li>
+          <li>
             <router-link to="/personal/tenderDetails">
               <el-button size="small" type="text">绑定银行卡</el-button>
             </router-link>
@@ -59,7 +64,7 @@
         </div>
         <ul>
           <li>
-            <router-link to="/personal/tenderDetails">
+            <router-link to="/personal/accountFlow">
               <el-button size="small" type="text">账户流水</el-button>
             </router-link>
           </li>
@@ -76,7 +81,7 @@
         </ul>
          </el-card>
       </div>
-   
+
     <div class="rightViews">
       <router-view></router-view>
     </div>
